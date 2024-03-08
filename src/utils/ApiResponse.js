@@ -1,4 +1,4 @@
-class ApiError extends Error {
+class ApiResponse {
   constructor(statusCode, message = "Success", data) {
     this.statusCode = statusCode
     this.data = null
@@ -6,3 +6,5 @@ class ApiError extends Error {
     this.success = statusCode < 400
   }
 }
+
+export {ApiResponse} 
